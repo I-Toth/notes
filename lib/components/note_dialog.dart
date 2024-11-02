@@ -19,7 +19,10 @@ void showNoteDialog({
       ),
       content: TextField(
         controller: textController,
-        decoration: buildTextFieldDecoration(context, title == 'Create Note' ? 'Enter your note here' : 'Edit your note here'),
+        decoration: buildTextFieldDecoration(
+          context,
+          title == AppLocalizations.of(context).translate('createNoteTitle') ? AppLocalizations.of(context).translate('enterNoteHint') : AppLocalizations.of(context).translate('editNoteHint'),
+        ),
       ),
       actions: [
         MaterialButton(
@@ -28,7 +31,7 @@ void showNoteDialog({
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
-                    'Note cannot be empty',
+                    AppLocalizations.of(context).translate('noteCannotBeEmpty'),
                     style: TextStyle(color: Theme.of(context).colorScheme.onError),
                   ),
                   backgroundColor: Theme.of(context).colorScheme.error,

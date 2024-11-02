@@ -1,0 +1,19 @@
+{
+  "appTitle": "Jegyzetek",
+  "createButton": "Létrehozás",
+  "updateButton": "Frissítés",
+  "deleteButton": "Törlés",
+  "noteCannotBeEmpty": "A jegyzet nem lehet üres",
+  "createNoteTitle": "Jegyzet létrehozása",
+  "updateNoteTitle": "Jegyzet frissítése",
+  "editNoteHint": "Jegyzet szerkesztése itt",
+  "enterNoteHint": "Írja be a jegyzetét ide",
+  "notesMenuTitle": "Jegyzetek",
+  "settingsMenuTitle": "Beállítások",
+  "edit": "Szerkesztés",
+  "delete": "Törlés",
+  "switchToEnglish": "Váltás angolra",
+  "switchToHungarian": "Váltás magyarra",
+  "darkMode": "Sötét mód",
+  "lightMode": "Világos mód"
+}

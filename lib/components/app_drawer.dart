@@ -16,18 +16,18 @@ class AppDrawer extends StatelessWidget {
             child: DrawerHeader(
               child: Icon(
                 Icons.edit_note,
-                size: 60,
+                size: dimens60,
                 color: Theme.of(context).colorScheme.primary,
               ),
             ),
           ),
           DrawerMenuTile(
-            title: 'Notes',
+            title: AppLocalizations.of(context).translate('notesMenuTitle'),
             leading: const Icon(Icons.home),
             onTap: () => Navigator.pop(context),
           ),
           DrawerMenuTile(
-            title: 'Settings',
+            title: AppLocalizations.of(context).translate('settingsMenuTitle'),
             leading: const Icon(Icons.settings),
             onTap: () {
               Navigator.pop(context);

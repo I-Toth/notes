@@ -1,0 +1,11 @@
+const double dimens1p5 = 1.5;
+const double dimens2 = 2.0;
+const double dimens8 = 8.0;
+const double dimens12 = 12.0;
+const double dimens20 = 20.0;
+const double dimens24 = 24.0;
+const double dimens48 = 48.0;
+const double dimens50 = 50.0;
+const double dimens60 = 60.0;
+const double dimens100 = 100.0;
+const double dimens120 = 120.0;

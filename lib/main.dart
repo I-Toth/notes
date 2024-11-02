@@ -1,5 +1,3 @@
-
-
 import 'package:notes/notes.dart';
 
 void main() async {
@@ -8,23 +6,10 @@ void main() async {
 
   runApp(
     MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => NoteDatabase()),
-        ChangeNotifierProvider(create: (context) => ThemeProvider()),
-      ],
-      child: const MyApp(),
+      providers: Providers.providers(),
+      child: const App(),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const NotesPage(),
-      theme: Provider.of<ThemeProvider>(context).themeData,
-    );
-  }
-}

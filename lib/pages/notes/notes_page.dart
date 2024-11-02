@@ -26,8 +26,8 @@ class _NotesPageState extends State<NotesPage> {
     textController.clear();
     showNoteDialog(
       context: context,
-      title: 'Create Note',
-      buttonText: 'Create',
+      title: AppLocalizations.of(context).translate('createNoteTitle'),
+      buttonText: AppLocalizations.of(context).translate('createButton'),
       textController: textController,
       onPressed: () {
         context.read<NoteDatabase>().addNote(textController.text);
@@ -41,8 +41,8 @@ class _NotesPageState extends State<NotesPage> {
     textController.text = note.text;
     showNoteDialog(
       context: context,
-      title: 'Update Note',
-      buttonText: 'Update',
+      title: AppLocalizations.of(context).translate('updateNoteTitle'),
+      buttonText: AppLocalizations.of(context).translate('updateButton'),
       textController: textController,
       onPressed: () {
         context.read<NoteDatabase>().updateNote(
@@ -79,18 +79,18 @@ class _NotesPageState extends State<NotesPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 25),
+            padding: const EdgeInsets.only(left: dimens24),
             child: Text(
-              'Notes',
+              AppLocalizations.of(context).translate('appTitle'),
               style: GoogleFonts.dmSerifText(
-                fontSize: 48,
+                fontSize: dimens48,
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
             ),
           ),
           Expanded(
             child: ListView.builder(
-                padding: const EdgeInsets.only(bottom: 120),
+                padding: const EdgeInsets.only(bottom: dimens120),
                 itemCount: currentNotes.length,
                 itemBuilder: (context, index) {
                   final note = currentNotes[index];

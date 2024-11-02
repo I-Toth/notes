@@ -17,12 +17,12 @@ class NoteTile extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(dimens8),
       ),
       margin: const EdgeInsets.only(
-        left: 25,
-        right: 25,
-        top: 10,
+        left: dimens24,
+        right: dimens24,
+        top: dimens12,
       ),
       child: ListTile(
         title: Text(
@@ -34,8 +34,8 @@ class NoteTile extends StatelessWidget {
         trailing: Builder(
             builder: (context) => IconButton(
                   onPressed: () => showPopover(
-                    width: 100,
-                    height: 100,
+                    width: dimens100,
+                    height: dimens100,
                     backgroundColor: Theme.of(context).colorScheme.surface,
                     context: context,
                     bodyBuilder: (context) => NoteSettings(

@@ -1,0 +1,19 @@
+{
+  "appTitle": "Notes",
+  "createButton": "Create",
+  "updateButton": "Update",
+  "deleteButton": "Delete",
+  "noteCannotBeEmpty": "Note cannot be empty",
+  "createNoteTitle": "Create Note",
+  "updateNoteTitle": "Update Note",
+  "editNoteHint": "Edit your note here",
+  "enterNoteHint": "Enter your note here",
+  "notesMenuTitle": "Notes",
+  "settingsMenuTitle": "Settings",
+  "edit": "Edit",
+  "delete": "Delete",
+  "switchToEnglish": "Switch to English",
+  "switchToHungarian": "Switch to Hungarian",
+  "darkMode": "Dark Mode",
+  "lightMode": "Light Mode"
+}

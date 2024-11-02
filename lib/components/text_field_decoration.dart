@@ -7,24 +7,24 @@ InputDecoration buildTextFieldDecoration(
     filled: true,
     fillColor: Theme.of(context).colorScheme.surface.withOpacity(0.1),
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(dimens12),
       borderSide: BorderSide(
         color: Theme.of(context).colorScheme.primary,
-        width: 1.5,
+        width: dimens1p5,
       ),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(dimens12),
       borderSide: BorderSide(
         color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
-        width: 1.5,
+        width: dimens1p5,
       ),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(dimens12),
       borderSide: BorderSide(
         color: Theme.of(context).colorScheme.primary,
-        width: 2,
+        width: dimens2,
       ),
     ),
   );

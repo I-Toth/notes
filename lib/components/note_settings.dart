@@ -20,11 +20,11 @@ class NoteSettings extends StatelessWidget {
             onEditTap!();
           },
           child: Container(
-            height: 50,
+            height: dimens50,
             color: Theme.of(context).colorScheme.surface,
             child: Center(
               child: Text(
-                'Edit',
+                AppLocalizations.of(context).translate('edit'),
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.primary,
                   fontWeight: FontWeight.bold,
@@ -39,11 +39,11 @@ class NoteSettings extends StatelessWidget {
             onDeleteTap!();
           },
           child: Container(
-            height: 50,
+            height: dimens50,
             color: Theme.of(context).colorScheme.surface,
             child: Center(
               child: Text(
-                'Delete',
+                AppLocalizations.of(context).translate('delete'),
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,

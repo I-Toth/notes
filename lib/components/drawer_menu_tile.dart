@@ -15,7 +15,7 @@ class DrawerMenuTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25),
+      padding: const EdgeInsets.only(left: dimens24),
       child: ListTile(
         title: Text(
           title,
