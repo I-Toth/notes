@@ -7,6 +7,7 @@ export 'package:flutter/cupertino.dart';
 export 'package:flutter/services.dart';
 export 'package:flutter/widgets.dart';
 export 'package:flutter_localizations/flutter_localizations.dart';
+export 'package:flutter/foundation.dart';
 
 // Külső csomagok
 export 'package:provider/provider.dart';
@@ -36,5 +37,3 @@ export 'package:notes/localization/app_localizations.dart';
 export 'package:notes/localization/language_provider.dart';
 export 'package:notes/providers/providers.dart';
 export 'package:notes/utils/dimens.dart';
-
-

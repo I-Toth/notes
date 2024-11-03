@@ -5,6 +5,10 @@ class LanguageProvider extends ChangeNotifier {
 
   Locale? get locale => _locale;
 
+  LanguageProvider() {
+    _locale ??= PlatformDispatcher.instance.locale.languageCode == 'hu' ? const Locale('hu') : const Locale('en');
+  }
+
   void setLocale(Locale locale) {
     _locale = locale;
     notifyListeners();

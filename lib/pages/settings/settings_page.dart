@@ -6,7 +6,8 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDarkMode = context.watch<ThemeProvider>().isDarkMode;
-    final isEnglish = context.watch<LanguageProvider>().locale?.languageCode == 'en';
+    final languageProvider = context.watch<LanguageProvider>();
+    final isEnglish = languageProvider.locale?.languageCode == 'en';
 
     return Scaffold(
       appBar: AppBar(
@@ -16,15 +17,20 @@ class SettingsPage extends StatelessWidget {
       body: Column(
         children: [
           SwitchTile(
-            title: isDarkMode ? AppLocalizations.of(context).translate('lightMode') : AppLocalizations.of(context).translate('darkMode'),
+            title: isDarkMode
+                ? AppLocalizations.of(context).translate('lightMode')
+                : AppLocalizations.of(context).translate('darkMode'),
             value: isDarkMode,
-            onChanged: (value) => Provider.of<ThemeProvider>(context, listen: false).toggleTheme(),
+            onChanged: (value) =>
+                context.read<ThemeProvider>().toggleTheme(),
           ),
           SwitchTile(
-            title: isEnglish ? AppLocalizations.of(context).translate('switchToHungarian') : AppLocalizations.of(context).translate('switchToEnglish'),
-            value: isEnglish,
+            title: isEnglish
+                ? AppLocalizations.of(context).translate('switchToHungarian')
+                : AppLocalizations.of(context).translate('switchToEnglish'),
+            value: isEnglish ?? true,
             onChanged: (value) {
-              final languageProvider = Provider.of<LanguageProvider>(context, listen: false);
+              final languageProvider = context.read<LanguageProvider>();
               if (value) {
                 languageProvider.setLocale(const Locale('en'));
               } else {
