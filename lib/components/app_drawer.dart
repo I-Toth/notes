@@ -23,12 +23,20 @@ class AppDrawer extends StatelessWidget {
           ),
           DrawerMenuTile(
             title: AppLocalizations.of(context).translate('notesMenuTitle'),
-            leading: const Icon(Icons.home),
+            leading:  Icon(
+              Icons.home,
+              size: dimens24,
+              color: Theme.of(context).colorScheme.onSurface,
+            ),
             onTap: () => Navigator.pop(context),
           ),
           DrawerMenuTile(
             title: AppLocalizations.of(context).translate('settingsMenuTitle'),
-            leading: const Icon(Icons.settings),
+            leading:  Icon(
+              Icons.settings,
+              size: dimens24,
+              color: Theme.of(context).colorScheme.onSurface,
+            ),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(

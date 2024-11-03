@@ -46,6 +46,7 @@ class NoteTile extends StatelessWidget {
                   icon: Icon(
                     Icons.more_vert,
                     color: Theme.of(context).colorScheme.inversePrimary,
+                    size: dimens24,
                   ),
                 )),
       ),

@@ -71,6 +71,7 @@ class _NotesPageState extends State<NotesPage> {
         backgroundColor: Theme.of(context).colorScheme.secondary,
         child: Icon(
           Icons.add,
+          size: dimens24,
           color: Theme.of(context).colorScheme.onSecondary,
         ),
       ),
